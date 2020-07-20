@@ -129,6 +129,7 @@ html {
 	line-height: 28pt;
 	align-self: flex-start;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .bodytext4 {
@@ -140,6 +141,7 @@ html {
 	line-height: 28pt;
 	align-self: flex-start;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 a {
