@@ -129,7 +129,6 @@ html {
 	line-height: 28pt;
 	align-self: flex-start;
 	cursor: pointer;
-	text-decoration: none;
 }
 
 .bodytext4 {
@@ -141,7 +140,6 @@ html {
 	line-height: 28pt;
 	align-self: flex-start;
 	cursor: pointer;
-	text-decoration: none;
 }
 
 a {
@@ -170,14 +168,14 @@ a {
 	cursor: pointer;
 }
 
-@keyframes swell {
+@keyframes turn {
 		from {transform: rotate(0)}
 		to {transform: rotate(3deg)}
 
 	}
 
 img.linkimg:hover {	
-	animation-name: turn;
+	animation-name: swell;
 	animation-duration: 0.2s;
 	transform: rotate(3deg);
 	animation-direction: alternate;
@@ -195,4 +193,3 @@ img.linkimg:hover {
 	max-height: 230px;
 
 }
-
