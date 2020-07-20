@@ -128,6 +128,7 @@ html {
 	font-size: 20pt;
 	line-height: 28pt;
 	align-self: flex-start;
+	cursor: pointer;
 }
 
 .bodytext4 {
@@ -138,6 +139,11 @@ html {
 	font-size: 20pt;
 	line-height: 28pt;
 	align-self: flex-start;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
 }
 
 .bodytextbig {
@@ -169,7 +175,7 @@ html {
 	}
 
 img.linkimg:hover {	
-	animation-name: swell;
+	animation-name: turn;
 	animation-duration: 0.2s;
 	transform: rotate(3deg);
 	animation-direction: alternate;
@@ -187,3 +193,4 @@ img.linkimg:hover {
 	max-height: 230px;
 
 }
+
