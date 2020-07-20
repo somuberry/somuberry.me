@@ -175,7 +175,7 @@ a {
 	}
 
 img.linkimg:hover {	
-	animation-name: swell;
+	animation-name: turn;
 	animation-duration: 0.2s;
 	transform: rotate(3deg);
 	animation-direction: alternate;
