@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+html {
+	height: 100%;
+}
+
+.body {
+	margin: 0px;
+	padding-top: 5%;
+	background-color: #73bca7;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+#grid {
+	display: grid;
+	grid-template-columns: 
+		50%
+		1fr;
+	grid-template-rows: 
+		auto
+		1fr;
+}
+
+#title    { 
+	grid-column: 1/ span 2; 
+	grid-row: 1; 
+	text-align: center;
+	
+}
+#text    { 
+	grid-column: 1; 
+	grid-row: 2; 
+	padding: 3%;
+	padding-top: 10%;
+	padding-right: 5%;
+}
+#links    { 
+	grid-column: 2; 
+	grid-row: 2;
+	padding-top: 3%;
+}
+
+#gridnest {
+	display: grid;
+	grid-template-columns: 
+		50%
+		1fr;
+	grid-template-rows: 
+		1fr;
+		1fr;
+}
+
+#voicebox {
+	grid-column: 1/ span 2;
+	grid-row: 1;
+	position: absolute;
+	justify-content: center;
+	object-fit: contain;
+	visibility: hidden;
+}
+
+#link1 {
+	grid-column: 1; 
+	grid-row-end: 1;
+	z-index: +1;
+}
+
+#link2 {
+	grid-column: 2;
+	grid-row-end: 1; 
+	z-index: +1;
+}
+
+#link3 {
+	grid-column: 1;
+	grid-row: 2; 
+}
+
+#link4 {
+	grid-column: 2;
+	grid-row: 2; 
+}
+
+.heading {
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: #dcefea;
+	font-size: 48pt;
+	line-height: 50pt;
+	align-self: center;
+}
+.headingsub {
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: #dcefea;
+	font-size: 36pt;
+	line-height: 45pt;
+	align-self: center;
+}
+.bodytext {
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #104A3D;
+	font-size: 20pt;
+	line-height: 28pt;
+	align-self: flex-start;
+}
+
+.bodytext2 {
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #dcefea;
+	font-size: 20pt;
+	line-height: 28pt;
+	align-self: flex-start;
+}
+
+.bodytext3 {
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #b06124;
+	font-size: 20pt;
+	line-height: 28pt;
+	align-self: flex-start;
+	cursor: pointer;
+}
+
+.bodytext4 {
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ad4837;
+	font-size: 20pt;
+	line-height: 28pt;
+	align-self: flex-start;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+.bodytextbig {
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #104A3D;
+	font-size: 26pt;
+	line-height: 36pt;
+	align-self: flex-start;
+}
+
+.linkbox {
+	height: 50%;
+	width: 50%;
+	float: left;
+}
+
+.linkimg {
+	max-height: 150px;
+	padding: 10%;
+	cursor: pointer;
+}
+
+@keyframes turn {
+		from {transform: rotate(0)}
+		to {transform: rotate(3deg)}
+
+	}
+
+img.linkimg:hover {	
+	animation-name: turn;
+	animation-duration: 0.2s;
+	transform: rotate(3deg);
+	animation-direction: alternate;
+}
+
+#gridnest:hover #voicebox{	
+	visibility: visible;
+}
+
+.voicebox {
+	object-fit: contain;
+}
+
+.voiceboximg {
+	max-height: 230px;
+
+}
