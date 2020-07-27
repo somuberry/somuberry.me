@@ -2,14 +2,21 @@
 
 html {
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 .body {
+	background-color: #73bca7;
+}
+
+.container {
+	height: 100%;
 	margin: 0px;
 	padding-top: 5%;
-	background-color: #73bca7;
 	padding-right: 10%;
 	padding-left: 10%;
+	overflow: hidden;
+	
 }
 
 #grid {
@@ -17,7 +24,9 @@ html {
 	grid-template-columns: 
 		50%
 		1fr;
-	grid-template-rows: 
+	grid-template-rows:
+		auto
+		auto
 		auto
 		1fr;
 }
@@ -32,49 +41,75 @@ html {
 	grid-column: 1; 
 	grid-row: 2; 
 	padding: 3%;
-	padding-top: 10%;
+	padding-top: 25%;
 	padding-right: 5%;
+	padding-left: 7%;
 }
-#links    { 
+#blink    { 
 	grid-column: 2; 
 	grid-row: 2;
-	padding-top: 3%;
+	padding: 3%;
+	padding-left: 5%;
+}
+
+#bar {
+	grid-column: 1/ span 2; 
+	grid-row: 3; 
+	text-align: center;
+	padding-top: 8%;
+	padding-bottom: 6%;
+	z-index: +1;
+}
+
+#mlinks {
+	grid-column: 1; 
+	grid-row: 4;
+}
+
+#meimg {
+	grid-column: 2; 
+	grid-row: 4;
 }
 
 #gridnest {
 	display: grid;
 	grid-template-columns: 
-		50%
+		60%
 		1fr;
 	grid-template-rows: 
-		1fr;
+		auto;
 		1fr;
 }
 
 #voicebox {
 	grid-column: 1/ span 2;
-	grid-row: 1;
-	position: absolute;
+	grid-row: 3;
 	justify-content: center;
 	object-fit: contain;
-	visibility: hidden;
+	margin: auto;
+	z-index: +2;
+	padding-top: 4%;
 }
 
 #link1 {
 	grid-column: 1; 
 	grid-row-end: 1;
-	z-index: +1;
+	padding-left: 10%;
 }
 
 #link2 {
 	grid-column: 2;
 	grid-row-end: 1; 
-	z-index: +1;
+	text-align: center;
+	padding-top: 20%;
+	padding-right: 20%;
 }
 
 #link3 {
 	grid-column: 1;
 	grid-row: 2; 
+	text-align: center;
+	padding-top: 15%;
 }
 
 #link4 {
@@ -96,7 +131,7 @@ html {
 	font-weight: 900;
 	font-style: normal;
 	color: #dcefea;
-	font-size: 36pt;
+	font-size: 32pt;
 	line-height: 45pt;
 	align-self: center;
 }
@@ -104,7 +139,7 @@ html {
 	font-family: freight-sans-pro, sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	color: #104A3D;
+	color: #357060;
 	font-size: 20pt;
 	line-height: 28pt;
 	align-self: flex-start;
@@ -162,10 +197,28 @@ a {
 	float: left;
 }
 
-.linkimg {
+.linkimg1 {
+	max-height: 200px;
+	padding: 10%;
+	cursor: pointer;
+}
+
+.linkimg2 {
 	max-height: 150px;
 	padding: 10%;
 	cursor: pointer;
+}
+
+.bigbutton {
+	max-height: 270px;
+	padding: 15%;
+	cursor: pointer;
+}
+
+.meimg {
+	max-height: 490px;
+	float: right;
+	padding-bottom: 2%;
 }
 
 @keyframes turn {
@@ -174,22 +227,38 @@ a {
 
 	}
 
-img.linkimg:hover {	
+img.linkimg1:hover {	
 	animation-name: turn;
 	animation-duration: 0.2s;
 	transform: rotate(3deg);
 	animation-direction: alternate;
 }
 
-#gridnest:hover #voicebox{	
-	visibility: visible;
+img.linkimg2:hover {	
+	animation-name: turn;
+	animation-duration: 0.2s;
+	transform: rotate(3deg);
+	animation-direction: alternate;
+}
+
+img.bigbutton:hover {	
+	animation-name: turn;
+	animation-duration: 0.2s;
+	transform: rotate(3deg);
+	animation-direction: alternate;
+}
+
+#voicebox:hover #imgme{	
+	visibility: hidden;
 }
 
 .voicebox {
 	object-fit: contain;
+	padding-top: 2%;
 }
 
 .voiceboximg {
-	max-height: 230px;
+	max-height: 185px;
 
 }
+
