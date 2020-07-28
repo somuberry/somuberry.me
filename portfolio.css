@@ -390,8 +390,8 @@ img.bigbutton:hover {
 	font-weight: 900;
 	font-style: normal;
 	color: #dcefea;
-	font-size: 32pt;
-	line-height: 35pt;
+	font-size: 28pt;
+	line-height: 33pt;
 	align-self: center;
 }
 .headingsub {
@@ -399,8 +399,8 @@ img.bigbutton:hover {
 	font-weight: 900;
 	font-style: normal;
 	color: #dcefea;
-	font-size: 26pt;
-	line-height: 30pt;
+	font-size: 22pt;
+	line-height: 26pt;
 	align-self: center;
 }
 
@@ -409,8 +409,8 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #357060;
-	font-size: 14pt;
-	line-height: 24pt;
+	font-size: 11pt;
+	line-height: 16pt;
 	align-self: flex-start;
 }
 
@@ -419,8 +419,8 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #dcefea;
-	font-size: 14pt;
-	line-height: 24pt;
+	font-size: 11pt;
+	line-height: 16pt;
 	align-self: flex-start;
 }
 
@@ -429,8 +429,8 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #b06124;
-	font-size: 14pt;
-	line-height: 24pt;
+	font-size: 11pt;
+	line-height: 16pt;
 	align-self: flex-start;
 	cursor: pointer;
 }
@@ -440,8 +440,8 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #ad4837;
-	font-size: 14pt;
-	line-height: 24pt;
+	font-size: 11pt;
+	line-height: 16pt;
 	align-self: flex-start;
 	cursor: pointer;
 }
@@ -451,7 +451,7 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #b06124;
-	font-size: 12pt;
+	font-size: 11pt;
 	line-height: 16pt;
 	align-self: flex-start;
 	cursor: pointer;
@@ -462,7 +462,7 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #357060;
-	font-size: 12pt;
+	font-size: 11pt;
 	line-height: 16pt;
 	align-self: flex-start;
 	cursor: pointer;
@@ -473,7 +473,7 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #357060;
-	font-size: 13pt;
+	font-size: 11pt;
 	line-height: 16pt;
 	align-self: flex-start;
 }
@@ -483,7 +483,7 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #ad4837;
-	font-size: 13pt;
+	font-size: 11pt;
 	line-height: 16pt;
 	align-self: flex-start;
 	cursor: pointer;
@@ -508,7 +508,7 @@ img.bigbutton:hover {
 }
 	
 .meimg {
-	max-height: 380px;
+	max-height: 330px;
 	margin: auto;
 	padding-bottom: 2%;
 	padding-top: 3%;
