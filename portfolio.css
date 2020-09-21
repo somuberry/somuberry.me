@@ -16,7 +16,6 @@ html {
 	padding-right: 10%;
 	padding-left: 10%;
 	overflow: hidden;
-	
 }
 
 #grid {
@@ -49,7 +48,29 @@ html {
 	grid-column: 2; 
 	grid-row: 2;
 	padding: 3%;
-	padding-left: 5%;
+	padding-top: 15%;
+	padding-bottom: 8%;
+}
+
+#gridnest1 {
+	display: grid;
+	grid-template-columns: 
+		50%
+		1fr;
+	grid-template-rows: 
+		1fr;
+}
+
+#blink1 {
+	grid-column: 1;
+	grid-row: 1;
+
+}
+
+#blink2  {
+	grid-column: 2;
+	grid-row: 1;
+
 }
 
 #bar {
@@ -232,15 +253,15 @@ a {
 }
 
 .bigbutton {
-	max-height: 270px;
-	padding: 15%;
+	max-height: 230px;
+	padding: 10%;
 	cursor: pointer;
-}
+	}
 
 .meimg {
 	max-height: 490px;
 	float: right;
-	padding-bottom: 2%;
+	padding-bottom: 0%;
 }
 
 @keyframes turn {
@@ -285,7 +306,6 @@ img.bigbutton:hover {
 }
 
 @media only screen and (max-device-width: 768px) {	
-
 #grid {
 	display: grid;
 	grid-template-columns: 
@@ -316,7 +336,28 @@ img.bigbutton:hover {
 #blink    { 
 	grid-column: 1; 
 	grid-row: 3;
-	margin: auto;s
+	margin: auto;
+	padding-bottom: 4%;
+	padding-top: 0px;
+}
+
+#gridnest1 {
+	display: grid;
+	grid-template-columns: 
+		50%
+		1fr;
+	grid-template-rows: 
+		1fr;
+}
+
+#blink1 {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#blink2  {
+	grid-column: 2;
+	grid-row: 1;
 }
 
 #bar {
@@ -390,8 +431,8 @@ img.bigbutton:hover {
 	font-weight: 900;
 	font-style: normal;
 	color: #dcefea;
-	font-size: 28pt;
-	line-height: 33pt;
+	font-size: 32pt;
+	line-height: 35pt;
 	align-self: center;
 }
 .headingsub {
@@ -399,8 +440,8 @@ img.bigbutton:hover {
 	font-weight: 900;
 	font-style: normal;
 	color: #dcefea;
-	font-size: 22pt;
-	line-height: 26pt;
+	font-size: 26pt;
+	line-height: 30pt;
 	align-self: center;
 }
 
@@ -409,8 +450,8 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #357060;
-	font-size: 11pt;
-	line-height: 16pt;
+	font-size: 14pt;
+	line-height: 24pt;
 	align-self: flex-start;
 }
 
@@ -419,8 +460,8 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #dcefea;
-	font-size: 11pt;
-	line-height: 16pt;
+	font-size: 14pt;
+	line-height: 24pt;
 	align-self: flex-start;
 }
 
@@ -429,8 +470,8 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #b06124;
-	font-size: 11pt;
-	line-height: 16pt;
+	font-size: 14pt;
+	line-height: 24pt;
 	align-self: flex-start;
 	cursor: pointer;
 }
@@ -440,8 +481,8 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #ad4837;
-	font-size: 11pt;
-	line-height: 16pt;
+	font-size: 14pt;
+	line-height: 24pt;
 	align-self: flex-start;
 	cursor: pointer;
 }
@@ -451,7 +492,7 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #b06124;
-	font-size: 11pt;
+	font-size: 12pt;
 	line-height: 16pt;
 	align-self: flex-start;
 	cursor: pointer;
@@ -462,7 +503,7 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #357060;
-	font-size: 11pt;
+	font-size: 12pt;
 	line-height: 16pt;
 	align-self: flex-start;
 	cursor: pointer;
@@ -473,7 +514,7 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #357060;
-	font-size: 11pt;
+	font-size: 13pt;
 	line-height: 16pt;
 	align-self: flex-start;
 }
@@ -483,17 +524,19 @@ img.bigbutton:hover {
 	font-weight: 700;
 	font-style: normal;
 	color: #ad4837;
-	font-size: 11pt;
+	font-size: 13pt;
 	line-height: 16pt;
 	align-self: flex-start;
 	cursor: pointer;
 }
 	
+	
 .bigbutton {
-	max-height: 200px;
+	max-height: 130px;
 	padding: 5%;
 	cursor: pointer;
-}
+	padding-top: 0px;
+	}
 	
 .linkimg1 {
 	max-height: 130px;
@@ -508,7 +551,7 @@ img.bigbutton:hover {
 }
 	
 .meimg {
-	max-height: 330px;
+	max-height: 380px;
 	margin: auto;
 	padding-bottom: 2%;
 	padding-top: 3%;
